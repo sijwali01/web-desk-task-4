@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Search</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <aside class="hamburger"><i class="fa-solid fa-bars"></i></aside>
+    <figure class="logo">
+      <a href="./index.html"><img src="https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500" alt="YouTube Logo"></a>
+    </figure>
+    <article class="search-container">
+      <section class="search-wrapper">
+        <input type="text" placeholder="Search" id="searchInput">
+        <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </section>
+      <div id="container"></div>
+    </article>
+    <div class="mic">
+      <i class="fa-solid fa-microphone"></i>
+    </div>
+    <aside class="options">
+      <i class="fa-solid fa-ellipsis-vertical"></i>
+      <div class="signin">
+        <i class="fa-regular fa-user"></i>
+        <span>Sign in</span>
+      </div>
+    </aside>
+  </nav>
+  <!-- Main Content -->
+  <main>
+    <!-- Left Side - Video Player -->
+    <aside class="left-side" id="left-container">
+      <article class="video-container">
+        <section class="video">
+          <video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" id="videoTag" controls></video>
+        </section>
+        <h2 id="videoTitle"></h2>
+        <h4 id="author"></h4>
+        <p id="des"></p>
+      </article>
+    </aside>
+    <!-- Right Side - Search Results -->
+    <aside class="right-side" id="right-container"></aside>
+  </main>
+  <!-- External JavaScript -->
+  <script src="./fun.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  /* background-color: gray; */
+}
+nav {
+  height: 56px;
+  width: 100%;
+  /* border: 2px solid black; */
+  display: flex;
+  color: #3b3b3b;
+}
+nav > .hamburger {
+  height: 100%;
+  width: 4%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav > .hamburger > i {
+  font-size: larger;
+  /* border: 1px solid black; */
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+nav > .hamburger > i:hover {
+  background-color: #e5e5e5;
+  cursor: pointer;
+}
+nav > .logo {
+  height: 100%;
+  width: 10%;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav > .logo > a {
+  /* border: 1px solid black; */
+  text-align: center;
+}
+nav > .logo > a > img {
+  height: 40%;
+  width: 60%;
+}
+nav > .search-container {
+  height: 100%;
+  width: 59%;
+  /* background-color: greenyellow; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 0px 10px;
+}
+nav > .search-container > .mic {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  /* border: 1px solid black; */
+  background-color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav > .search-container > .mic:hover {
+  cursor: pointer;
+}
+nav > .search-container > .search-wrapper {
+  height: 80%;
+  width: 75%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 1.5px solid #dcdada;
+  /* justify-content: center; */
+}
+nav > .search-container > .search-wrapper > input {
+  width: 88%;
+  height: 88%;
+  border: none;
+  outline: none;
+}
+
+nav > .search-container > .search-wrapper > i {
+  /* border: 1px solid red; */
+  background-color: #e5e5e5;
+  border: 1.5px solid #dcdada;
+  height: 100%;
+  width: 10%;
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+nav > .search-container > .search-wrapper > i:hover {
+  cursor: pointer;
+}
+nav > .options {
+  height: 100%;
+  width: 27%;
+  /* background-color: blueviolet; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  gap: 20px;
+}
+nav > .options > i:hover {
+  cursor: pointer;
+}
+nav > .options > .signin {
+  border: 1.5px solid #dcdada;
+  color: #065fd4;
+  height: 60%;
+  width: 25%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav > .options > .signin:hover {
+  background-color: #def1ff;
+  cursor: pointer;
+}
+
+main {
+  height: calc(100vh - 56px);
+  width: 100%;
+  background-color: white;
+  display: flex;
+}
+main > .left-side {
+  height: 100%;
+  width: 66%;
+  /* background-color: lightpink; */
+}
+main > .right-side {
+  height: 100%;
+  width: 34%;
+  /* background-color: blueviolet; */
+  overflow: scroll;
+}
+main > .right-side > .thumbnail-container {
+  height: 150px;
+  width: 80%;
+  /* border: 2px solid beige; */
+  background-color: white;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+main > .right-side > .thumbnail-container:hover {
+  cursor: pointer;
+}
+main > .right-side > .thumbnail-container > .thumbnail {
+  height: 80%;
+  width: 45%;
+  /* border: 2px solid black; */
+}
+main > .right-side > .thumbnail-container > .thumbnail > img {
+  height: 100%;
+  width: 100%;
+}
+main > .right-side > .thumbnail-container > .content {
+  height: 80%;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 8px;
+  /* border: 2px solid black; */
+}
+main > .left-side > .video-container {
+  /* height: 70vh; */
+  width: 85%;
+  /* border: 2px solid black; */
+  margin: 25px auto;
+}
+main > .left-side > .video-container > #videoTitle {
+  padding: 5px;
+}
+main > .left-side > .video-container > .video {
+  /* height: 75vh; */
+  width: 100%;
+  /* border: 2px solid black; */
+}
+main > .left-side > .video-container > .video > video {
+  height: 100%;
+  width: 100%;
+}
